@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Follow Back</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="top-bar">
+        <h1 class="title-font">Instagram Clean-Up</h1>
+    </div>
+    <div class="content-wrapper">
+        <h1 class="topText">Follow the steps below to find out which accounts don't follow you back on your Instagram account:</h1>
+        <div class="directions-with-image">
+            <div class="directions">
+                <p>Step 1: Visit <a href="https://accountscenter.instagram.com/?entry_point=app_settings" target="_blank">Instagram Account Center</a></p>
+                <p>Step 2: Under "Account Settings" click "Your information and permissions"</p>
+                <p>Step 3: Select "Download your information" and then "Download or transfer your information"</p>
+                <p>Step 4: Select "Some of your information"</p>
+                <p>Step 5: Scroll down and select "Followers and following" under the "Connections section" and click "next".</p>
+                <p>Step 6: Select "Download to device"</p>
+                <p>Step 7: Select "All time", enter your personal email, select "JSON", and "low quality"</p>
+                <p>Step 8: Instagram will email the given email address from the previous step when the file are ready (1-5 mins) </p>
+                <p>Step 9: Download the zip file and input it below</p>
+            </div>
+            <img src="images/ig_trash_logo.png" alt="Description of image" class="directions-image">
+        </div>
+        <div class="gallery-container">
+            <div class="gallery">
+                <img src="images/step1.png" alt="Step 1" width="50%" height="50%">
+                <img src="images/step2.png" alt="Image 2">
+                <img src="images/step3.png" alt="Image 3">
+                <img src="images/step4.png" alt="Image 4">
+                <img src="images/step5.png" alt="Image 5">
+                <img src="images/step6.png" alt="Image 6">
+                <img src="images/step7.png" alt="Image 7">
+            </div>
+        </div>
+        <div class="uploadButtons"> 
+            <input type="file" id="zipFileInput" class="pickFile" accept=".zip">
+            <button onclick="handleZipFile()" class="upload">Upload</button>
+            <div id="result"></div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+            <script src="getnonfollowers.js"></script>
+        </section>
+    <footer class="footer1">
+        <p>Copyright © Tygan Chin 2024 (In collaboration with GPT4)</p>
+    </footer>
+</body>
+</html>

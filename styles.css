@@ -1,0 +1,208 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.top-bar {
+    height: 150px;
+    width: 100%;
+    background-image: url('images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    /* padding: 10px 0; */
+    text-align: center;
+    display: flex; /* Use flexbox to center the content */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+
+}
+.title-font{
+    font-family: 'Proxima Nova';
+    font-size: 60px;
+}
+.topText {
+    font-family: 'Proxima Nova';
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 30px;
+}
+.directions-with-image {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    gap: 120px; /* Optional: Add space between text and image */
+}
+.directions-image {
+    max-width: 325px; /* Set maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+.directions {
+    font-family: 'Neue Helvetica';
+    font-size: 18px;
+    margin-left: 50px;
+}
+.content-wrapper {
+    padding: 20px;
+    width: 100%;
+}
+.content-wrapper-results {
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95%; /* Set the width to 80% */
+    margin: 0 auto; /* Center the gallery container */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    /* padding: 10px; */
+    box-sizing: border-box;
+    padding-bottom: 0px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px; /* Add padding to the left to ensure the first image is fully visible */
+}
+.gallery img {
+    max-height: 40vh; /* Ensure all images have the same height */
+    width: auto;
+    margin-right: 20px; /* Space between images */
+}
+section {
+    margin-bottom: 40px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    position: relative;
+}
+.footer1 {
+    position:absolute;
+}
+
+
+.image-border-example {
+    border: 10px solid transparent; /* Set the border width */
+    padding: 20px;
+    margin: 20px;
+    border-image-source: url('images/background.jpeg'); /* Specify the image URL */
+    border-image-slice: 30; /* Slices the image */
+    border-image-repeat: stretch; /* Specifies how to repeat the image (stretch, repeat, round, space) */
+}
+.uploadButtons {
+    font-family: 'Neue Helvetica';
+    padding-top: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+
+}
+.pickFile {
+
+    padding: 10px 20px; /* Adjust the padding for more space inside the button */
+    font-size: 25px; /* Increase the font size */
+    color: rgb(0, 0, 0); /* Optional: Text color */
+}
+
+.upload {
+    padding: 10px 20px; /* Adjust padding for more space inside the button */
+    font-size: 25px; /* Increase the font size */
+    color: rgb(0, 0, 0); /* Optional: Text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.resultsTitle {
+    font-family: 'Neue Helvetica';
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    /* margin-left: 20px;
+    text-align: left;
+    align-self: flex-start; Align this item to the start of the flex container */
+
+}
+
+.account-name {
+    display: inline-block;
+    /* margin-top: 10px; */
+    font-size: 40px;
+    color: #007BFF;
+    text-decoration: none;
+    font-family: 'Neue Helvetica';
+}
+.account-name:hover {
+    text-decoration: underline;
+}
+
+.account-image {
+    max-width: 115px; /* Adjust as needed */
+    height: auto;
+    margin-left: 20px; /* Space between text and image */
+}
+
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of boxes to next line */
+    align-items: flex-start; /* Align items to the start */
+    gap: 45px; /* Gap between boxes */
+}
+
+.account {
+    width: 48%; /* Each account takes 45% of the container width to allow space for wrapping */
+    height: 150px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    background-color: #f9f9f9;
+    gap: 20px;
+    position: relative;
+    margin-bottom: -5px;
+    /* justify-content: space-between; */
+}
+
+
+.close-button {
+    position: absolute; /* Position the close button absolutely */
+
+    right: 20px; /* Adjust as needed */
+    color: rgb(255, 255, 255);
+    background-color: #6a6a6a;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 5px 10px; /* Add some padding for better clickability */
+}
+
+.close-button:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+/* .allClean {
+    width: 80%;
+    text-content
+} */
+
